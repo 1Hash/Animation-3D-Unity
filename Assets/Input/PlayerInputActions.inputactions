@@ -1,0 +1,186 @@
+{
+    "name": "PlayerInputActions",
+    "maps": [
+        {
+            "name": "Movement",
+            "id": "1c293ab9-8d0c-4ba1-894b-49333838ec47",
+            "actions": [
+                {
+                    "name": "Movement",
+                    "type": "PassThrough",
+                    "id": "cdf994ea-5148-465e-9d50-055b32cd0d63",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "View",
+                    "type": "PassThrough",
+                    "id": "fb77eb8c-e70f-45d2-b6eb-123a8610543a",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "WASD",
+                    "id": "984e2092-377c-495e-990d-39e4ab003f63",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "afd63785-3dea-442c-81ba-a878ca5a9d09",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "ac175f9c-4a88-44f5-8e01-70a675f44d9a",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "0c4a8509-41de-41d5-8423-92219001e4d0",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "2df31e1e-a1da-4a1e-ba56-053a2efad53f",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "f6df0186-4b45-480c-834d-a3feed41da07",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "View",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Actions",
+            "id": "287da161-ff5e-4882-9764-ec6716db3aea",
+            "actions": [
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "797bf549-5770-4c1e-9ad3-11b1e3873eae",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SuperJump",
+                    "type": "Button",
+                    "id": "57800b6a-7235-481b-a78a-bc6f97452e30",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "WalkingToggle",
+                    "type": "Button",
+                    "id": "aea2718f-58a7-4035-8fef-f56dc94dba77",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "926fc1aa-91c3-4b5b-946f-c5606ceae33d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6fceef7f-fef5-4e90-b8f7-5a8995f67cec",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c1edbd2b-4a96-4d1a-aea2-b7d06a0dc3a9",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SuperJump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0091e5b1-cae2-4a49-aba0-fdd36e97cabc",
+                    "path": "<Keyboard>/leftCtrl",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "WalkingToggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a872f17d-25ef-45c1-80af-68f531cc7bb6",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
